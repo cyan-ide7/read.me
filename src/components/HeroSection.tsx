@@ -10,7 +10,7 @@ export default function HeroSection() {
     <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
       {/* Background glow effects */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/20 rounded-full blur-[120px] -z-10 pointer-events-none" />
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -28,7 +28,7 @@ export default function HeroSection() {
           transition={{ duration: 0.5, delay: 0.1 }}
         >
           <h1 className="text-5xl sm:text-7xl font-extrabold tracking-tight text-foreground mb-4">
-            Subham.
+            Subham Dey.
           </h1>
         </motion.div>
 
@@ -38,7 +38,7 @@ export default function HeroSection() {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <h2 className="text-3xl sm:text-5xl font-bold text-muted mb-8 max-w-3xl">
-            Robotics Developer | ROS2 | Embedded Systems | AI
+            Computer Science | Robotics & Automation | Multimodal VLA
           </h2>
         </motion.div>
 
@@ -48,8 +48,7 @@ export default function HeroSection() {
           transition={{ duration: 0.5, delay: 0.3 }}
         >
           <p className="text-lg sm:text-xl text-muted max-w-2xl mb-10 leading-relaxed">
-            I specialize in bridging the gap between hardware and software. Building intelligent systems, 
-            autonomous robots, and writing high-performance code to solve complex engineering problems.
+            I'm passionate about robotics, automation & systems. I am currently working on multimodal vla models and on system Architecture design & will be updating the progress here
           </p>
         </motion.div>
 
