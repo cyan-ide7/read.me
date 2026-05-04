@@ -86,18 +86,32 @@ export default function HeroSection() {
             { icon: Mail, href: "mailto:subhamdey228540@gmail.com" },
             { icon: Discord, href: "https://discordapp.com/users/1142797663234953296" },
             { icon: Instagram, href: "https://www.instagram.com/cyan_ide7/" },
-            { icon: FileText, href: "/read.me/public/Subham_Dey_Resume.pdf" },
+            {
+              icon: FileText,
+              href: "/Subham_Dey_Resume.pdf",
+              download: true
+            },
+
           ].map((item, index) => (
-            <Link
+            <a
               key={index}
               href={item.href}
-              target="_blank"
+
+              //  Only open new tab if NOT download
+              target={item.download ? undefined : "_blank"}
+
+              rel="noopener noreferrer"
+
+              // Force download
+              download={item.download ? true : undefined}
+
               className="text-muted hover:text-accent transition-colors hover:-translate-y-1 transform duration-200"
             >
               <item.icon className="w-6 h-6" />
-            </Link>
+            </a>
           ))}
         </motion.div>
+
       </div>
     </section>
   );
