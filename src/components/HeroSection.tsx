@@ -81,7 +81,7 @@ export default function HeroSection() {
           className="mt-16 flex items-center space-x-6"
         >
           {[
-            { icon: Github, href: "https://github.com" },
+            { icon: Github, href: "https://github.com/cyan-ide7" },
             { icon: Linkedin, href: "https://linkedin.com" },
             { icon: Mail, href: "mailto:contact@example.com" },
             { icon: FileText, href: "/resume.pdf" },
