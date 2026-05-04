@@ -36,9 +36,9 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0 flex items-center">
-            <Link href="/" className="text-xl font-bold tracking-tighter text-foreground">
+            <a href="https://github.com/cyan-ide7" target="_blank" rel="noopener noreferrer" className="text-xl font-bold tracking-tighter text-foreground hover:opacity-80 transition-opacity">
               <span className="text-accent">{"<"}</span>cyanide<span className="text-accent">{"/>"}</span>
-            </Link>
+            </a>
           </div>
 
           {/* Desktop Nav */}
