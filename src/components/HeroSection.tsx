@@ -88,7 +88,7 @@ export default function HeroSection() {
             { icon: Instagram, href: "https://www.instagram.com/cyan_ide7/" },
             {
               icon: FileText,
-              href: "/Subham_Dey_Resume.pdf",
+              href: "Subham_Dey_Resume.pdf",
               download: true
             },
 
