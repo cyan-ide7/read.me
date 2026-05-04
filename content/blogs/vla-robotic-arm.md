@@ -116,7 +116,7 @@ Camera constants (`CAM_WIDTH=512, CAM_HEIGHT=512, CAM_FOV_DEG=60, CAM_HEIGHT_M=1
 ### 4.1 Result Screenshots - Training graph 
 This graph represents the Mean Squared Error (MSE) Loss over 30 training epochs for your NiryoVLA model. 
 
-![Training and Validation Loss](/self/training-graph.png)
+![Training and Validation Loss](/read.me/training-graph.png)
 
 - **X-Axis (Epoch)**: Represents one full pass of your demonstration dataset through the neural network. 
 - **Y-Axis (MSE Loss)**: Measures the average squared difference between the robot's predicted 6D pose and the actual human demonstration. Lower values indicate that the model's predictions are closer to the expert's behavior. 
@@ -126,7 +126,7 @@ This graph represents the Mean Squared Error (MSE) Loss over 30 training epochs 
 - Data collection 
 - Image recognition  
 
-![YOLO Object Detection](/self/yolo-detection.png)
+![YOLO Object Detection](/read.me/yolo-detection.png)
 
 
 
