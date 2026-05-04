@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, FileText, Mail } from "lucide-react";
-import { FaGithub as Github, FaLinkedin as Linkedin } from "react-icons/fa";
+import { FaGithub as Github, FaLinkedin as Linkedin, FaDiscord as Discord, FaInstagram as Instagram } from "react-icons/fa";
 import Link from "next/link";
 
 export default function HeroSection() {
@@ -84,6 +84,8 @@ export default function HeroSection() {
             { icon: Github, href: "https://github.com/cyan-ide7" },
             { icon: Linkedin, href: "https://www.linkedin.com/in/subhamdey33" },
             { icon: Mail, href: "mailto:subhamdey228540@gmail.com" },
+            { icon: Discord, href: "https://discordapp.com/users/1142797663234953296" },
+            { icon: Instagram, href: "https://www.instagram.com/cyan_ide7/" },
             { icon: FileText, href: "/resume.pdf" },
           ].map((item, index) => (
             <Link
