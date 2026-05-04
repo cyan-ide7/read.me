@@ -14,22 +14,28 @@ const skills = [
 
 const timeline = [
   {
-    year: "2023 - Present",
-    title: "Robotics Software Engineer",
-    company: "Tech Innovators Inc.",
-    description: "Developing autonomous navigation systems for warehouse robots using ROS2 and C++.",
+    year: "Summer 2025",
+    title: "Robotics Intern",
+    company: "IEEE PES CRAIS LABS",
+    description: "Performed simulation and gait analysis of quadruped robots (Spot, ANYmal) and supported migration of legacy ROS1 systems to ROS2, resolving compatibility issues in existing packages.",
   },
   {
-    year: "2021 - 2023",
-    title: "M.S. in Robotics",
-    company: "University of Technology",
-    description: "Focus on Computer Vision and Autonomous Systems. Thesis on multi-agent SLAM.",
+    year: "May - June 2025",
+    title: "Data Analytics Intern",
+    company: "INFOTACT SOLUTIONS",
+    description: "Developed a web data extraction and visualization app using APIs, BeautifulSoup, and Selenium.",
   },
   {
-    year: "2019 - 2021",
-    title: "Embedded Systems Developer",
-    company: "IoT Solutions Ltd.",
-    description: "Programmed microcontrollers for smart home devices using C and FreeRTOS.",
+    year: "2023 - 2027",
+    title: "B.Tech in Computer Science and Engineering",
+    company: "PES UNIVERSITY",
+    description: "Pursuing Bachelor of Technology in Computer Science and Engineering.",
+  },
+  {
+    year: "2022",
+    title: "Class 12 & Class 10",
+    company: "AMARA JYOTHI PUBLIC SCHOOL",
+    description: "Class 12: 91% | Class 10: 92.8%",
   },
 ];
 
