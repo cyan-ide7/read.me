@@ -2,12 +2,7 @@
 
 A highly performant, SEO-friendly, and modern personal portfolio website built with **Next.js 15 (App Router)**, **Tailwind CSS v4**, and **Framer Motion**.
 
-## Features
-- ⚡ **Next.js App Router**: Lightning fast, static site generation ready.
-- 🎨 **Tailwind CSS v4**: Beautiful utility-first styling with pure dark mode support.
-- ✨ **Framer Motion**: Smooth scroll animations and page transitions.
-- 📝 **Markdown Blog CMS**: Write blogs in `.md` files; Next.js handles the rest statically.
-- 📱 **Mobile-First Responsive Design**: Looks great on all devices.
+
 
 ## Getting Started Locally
 
