@@ -24,45 +24,20 @@ export default function ContactSection() {
             Whether you have a question or just want to say hi, I'll try my best to get back to you!
           </p>
 
-          <form className="bg-surface border border-surface-hover p-8 rounded-2xl max-w-xl mx-auto text-left shadow-lg">
-            <div className="mb-6">
-              <label htmlFor="name" className="block text-sm font-medium text-muted mb-2">Name</label>
-              <input 
-                type="text" 
-                id="name" 
-                className="w-full bg-background border border-surface-hover rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-accent transition-colors"
-                placeholder="John Doe"
-              />
-            </div>
-            
-            <div className="mb-6">
-              <label htmlFor="email" className="block text-sm font-medium text-muted mb-2">Email</label>
-              <input 
-                type="email" 
-                id="email" 
-                className="w-full bg-background border border-surface-hover rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-accent transition-colors"
-                placeholder="john@example.com"
-              />
-            </div>
-            
-            <div className="mb-8">
-              <label htmlFor="message" className="block text-sm font-medium text-muted mb-2">Message</label>
-              <textarea 
-                id="message" 
-                rows={4}
-                className="w-full bg-background border border-surface-hover rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-accent transition-colors resize-none"
-                placeholder="Hello!"
-              ></textarea>
-            </div>
-            
-            <button 
-              type="button"
-              className="w-full inline-flex items-center justify-center px-8 py-3.5 text-base font-medium text-background bg-accent hover:bg-accent-hover rounded-lg transition-all"
+          <div className="bg-surface border border-surface-hover p-12 rounded-2xl max-w-xl mx-auto text-center shadow-lg">
+            <Mail className="w-12 h-12 text-accent mx-auto mb-6" />
+            <h3 className="text-2xl font-bold text-foreground mb-4">Email Me Directly</h3>
+            <p className="text-muted mb-8 font-mono">
+              subhamdey228540@gmail.com
+            </p>
+            <a 
+              href="mailto:subhamdey228540@gmail.com"
+              className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-background bg-accent hover:bg-accent-hover rounded-lg transition-all hover:scale-105 active:scale-95"
             >
               <Send className="w-5 h-5 mr-2" />
-              Send Message
-            </button>
-          </form>
+              Say Hello
+            </a>
+          </div>
         </motion.div>
       </div>
     </section>
