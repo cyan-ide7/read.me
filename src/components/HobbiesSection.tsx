@@ -38,7 +38,7 @@ export default function HobbiesSection() {
           className="mb-16 text-center"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4 inline-flex items-center">
-            <span className="text-accent mr-3">03.</span> Beyond Coding
+            <span className="text-accent mr-3">03.</span> Beyond
           </h2>
           <p className="text-muted max-w-2xl mx-auto mt-4">
             here are some other things i like to do
