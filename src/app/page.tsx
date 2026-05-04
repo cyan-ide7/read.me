@@ -18,9 +18,7 @@ export default function Home() {
       <ContactSection />
       
       {/* Footer */}
-      <footer className="py-8 text-center border-t border-surface text-muted text-sm font-mono">
-        <p>Built with Next.js, Tailwind CSS & Framer Motion.</p>
-        <p className="mt-2 text-xs">© {new Date().getFullYear()} Subham. All rights reserved.</p>
+      <footer className="py-8">
       </footer>
     </main>
   );
