@@ -82,7 +82,7 @@ export default function HeroSection() {
         >
           {[
             { icon: Github, href: "https://github.com/cyan-ide7" },
-            { icon: Linkedin, href: "https://linkedin.com" },
+            { icon: Linkedin, href: "https://www.linkedin.com/in/subhamdey33" },
             { icon: Mail, href: "mailto:contact@example.com" },
             { icon: FileText, href: "/resume.pdf" },
           ].map((item, index) => (
