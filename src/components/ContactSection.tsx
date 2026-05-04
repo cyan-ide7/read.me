@@ -21,7 +21,7 @@ export default function ContactSection() {
           </h2>
           <p className="text-muted text-lg mb-12 max-w-2xl mx-auto">
             I'm currently looking for new opportunities in robotics and software engineering. 
-            Whether you have a question or just want to say hi, I'll try my best to get back to you!
+            Whether you have a question or just want to say hi, would love to nerd out if you have similar ideas  and get feedbacks!
           </p>
 
           <div className="bg-surface border border-surface-hover p-12 rounded-2xl max-w-xl mx-auto text-center shadow-lg">
