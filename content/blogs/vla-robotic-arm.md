@@ -17,37 +17,7 @@ The system is composed of three decoupled layers:
 ### Key Design Principle
 The core design is based on a fully offline, self-contained system and YOLO colour detection, ensuring no external API dependence or usage limits. The neural network's sole function is visual servoing: determining the next pose based on the current and target positions. 
 
-### Importance of the problem in robotics/automation 
-Traditional robots are programmed with explicit rules. A factory robot arm moves to position X, closes its gripper, moves to position Y, opens its gripper. Every single motion is hand-coded. If the object is 2 cm to the left of where the programmer expected, the robot fails.  
 
-This is brittle. The real world is messy. Objects are never in exactly the same place. The question we are trying to answer with this project is:  
-
-> *Can we build a robot arm that a human can instruct using ordinary language like 'pick up the red cube and put it on the left' and have the robot figure out, by looking at the scene with its camera, exactly where that object is and how to move its arm to complete the task?*
-
-### Solution Overview
-We implemented a hybrid architecture that decouples language understanding (via Ollama), object localization (via YOLOv8), and trajectory generation (via a CNN-based Behavioral Cloning network). 
-
-# 2. Objective 
-There are many ways to build a VLA system. Have a working VLA architecture, with a minimal trained model working on unseen data:
-`auto data collection -> normalization for the data pretraining -> training -> interface`
-
-Being honest about the limitations of a 100-demonstration behavioural cloning system is as important as understanding what it does well. This section provides a realistic picture.  
-
-### Expected outcomes 
-- Pick and place objects whose colours and positions are similar to training demonstrations  
-- Generalise to small position variations — if the training data had objects across a range of positions, the network interpolates within that range  
-- Produce smooth, human-like trajectories because it learned from human demonstrations  
-- Handle any language instruction the keyword parser understands, because language is decoupled from the network  
-- React to small disturbances mid-trajectory because the network re-evaluates at every timestep  
-
-### Out of scope of this Project  
-- Generalise to objects it has never seen: a new object shape not in YOLO's classes will not be detected  
-- Handle stacked objects or complex spatial arrangements not seen in training  
-- Recover from grasp failures: if it drops the object, there is no re-grasp strategy  
-- Understand complex instructions like 'sort these by colour': multi-step planning is not encoded  
-- Work in environments very different from the training setup: different lighting, different table, very different object positions  
-
-# 3. Methodology 
 
 ### Layer 1 — Language Understanding  
 The reasoning tasks were successfully executed and analyzed using the locally hosted Ollama 3 model.  
@@ -123,19 +93,7 @@ Predicted Action → `[B, 6]` normalised EE pose in `[-1, +1]`
 ### 3.4.1 Vision Detection System (vision_parser.py)  
 The vision parser replaces any external LLM API with a fully local, offline pipeline using YOLOv8 for object detection and HSV colour masking for object identification.  
 
-### 3.4.2 YOLOv8 Object Detection  
-YOLOv8n (nano variant, ~6 MB) is used as the base detector. It runs on every incoming camera frame and returns a list of bounding boxes, each with a class label and confidence score. The model is pre-trained on COCO (80 classes) and can detect cups, bottles, bowls, balls, and other table-top objects out of the box. For custom objects (coloured cubes, cylinders) a small fine-tuning step on 50–100 labelled images is sufficient.  
 
-### 3.4.3 Colour Filtering  
-Each detected bounding box is cropped from the original frame and converted to HSV colour space. A per-colour HSV mask is applied and the fraction of matching pixels is computed. Detections are ranked by `colour_score × confidence` and the top match is selected.  
-
-| Colour | HSV Lower | HSV Upper |
-| --- | --- | --- |
-| Red | `[0, 120, 70]` | `[10, 255, 255]` + `[170, 120, 70] → [180, 255, 255]` |
-| Green | `[36, 80, 40]` | `[86, 255, 255]` |
-| Blue | `[100, 80, 40]` | `[130, 255, 255]` |
-| Yellow | `[20, 100, 80]` | `[35, 255, 255]` |
-| Purple | `[130, 50, 40]` | `[160, 255, 255]` |
 
 ### 3.4.4 2D Bounding Box → 3D World Position  
 The 2D pixel centre of the selected bounding box is projected to a 3D world coordinate using a simple pinhole camera model. The camera is mounted directly above the table pointing straight down, so depth equals camera height minus object height above the table surface.  
@@ -151,13 +109,7 @@ world_z = TABLE_Z + object_height
 
 Camera constants (`CAM_WIDTH=512, CAM_HEIGHT=512, CAM_FOV_DEG=60, CAM_HEIGHT_M=1.2`) must be matched to the CoppeliaSim vision sensor settings.  
 
-## 3.5 Tools Used 
-- **CoppeliaSim** (with ZMQ Remote API enabled): Simulation platform for the robot and vision sensors. 
-- **Ollama (Llama 3)**: Local LLM for advanced text parsing. 
-- **YOLOv8**: Real-time object detection and identification. 
-- **PyTorch**: Framework for training the CNN-based Behavioral Cloning model. 
-- **Python 3.10+** 
-- **CUDA-compatible GPU** (recommended for training) 
+
 
 # 4. Outcome 
 
@@ -176,8 +128,7 @@ This graph represents the Mean Squared Error (MSE) Loss over 30 training epochs 
 
 ![YOLO Object Detection](/self/yolo-detection.png)
 
-### 4.2 Video Demonstration 
-- `mars_jackfruit.mp4`
+
 
 ### 4.3 GitHub Repository 
 **GitHub Link:** [https://github.com/cyan-ide7/vla_arm.git](https://github.com/cyan-ide7/vla_arm.git)
