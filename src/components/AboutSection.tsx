@@ -4,12 +4,11 @@ import { motion } from "framer-motion";
 import { Code2, Cpu, Database, Layout, Terminal, Wrench } from "lucide-react";
 
 const skills = [
-  { category: "Languages", items: "Python, C++, TypeScript, JavaScript, Rust" },
-  { category: "Robotics", items: "ROS2, Gazebo, MoveIt, Navigation2, OpenCV" },
-  { category: "Embedded", items: "Arduino, Raspberry Pi, ESP32, FreeRTOS" },
-  { category: "AI / ML", items: "PyTorch, TensorFlow, YOLO, SLAM algorithms" },
-  { category: "Web Dev", items: "React, Next.js, Tailwind CSS, Node.js" },
-  { category: "Tools", items: "Git, Docker, Linux, CMake, GitHub Actions" },
+  { category: "Languages", items: "Python, C/C++, TypeScript, JavaScript, Lua" },
+  { category: "Robotics & Simulation", items: "ROS/ROS2, Gazebo, CoppeliaSim, MoveIt, OpenCV, Unity, CAD" },
+  { category: "Embedded Systems", items: "Microcontrollers, Arduino, ESP32, FreeRTOS, QNX Architecture," },
+  { category: "AI & Machine Learning", items: "PyTorch, TensorFlow, YOLO, SLAM, LLMs, Agentic AI" },
+  { category: "Tools & DevOps", items: "Git, GitHub Actions, CI/CD, Docker, Linux, Android Studio" },
 ];
 
 const timeline = [
@@ -65,13 +64,11 @@ export default function AboutSection() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <p className="text-muted text-lg mb-6 leading-relaxed">
-              Hello! I'm a passionate robotics engineer and developer who loves building things that move, think, and solve real-world problems. My journey started with a simple Arduino kit, and today I build complex autonomous systems.
-            </p>
-            <p className="text-muted text-lg mb-8 leading-relaxed">
-              Whether it's designing a PCB, writing low-level firmware, or building a sleek web dashboard to monitor a fleet of robots, I enjoy working across the entire tech stack.
+              I just love engineering physics for building things that think, and solve problems along with theoretical and fictional ideas.
             </p>
 
-            <h3 className="text-xl font-semibold text-foreground mb-4">Core Competencies</h3>
+
+            <h3 className="text-xl font-semibold text-foreground mb-4">buzzwords for myself  </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {skills.map((skill, index) => (
                 <div key={index} className="bg-surface p-4 rounded-lg border border-surface-hover hover:border-accent/50 transition-colors">

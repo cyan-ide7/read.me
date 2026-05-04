@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Gamepad2, Wrench, Cuboid, Camera, Code, BookOpen } from "lucide-react";
+import { Gamepad2, Cuboid, BookOpen, Music } from "lucide-react";
 
 const hobbies = [
   {
@@ -10,28 +10,18 @@ const hobbies = [
     icon: Cuboid,
   },
   {
-    name: "Hardware Hacking",
-    description: "Reverse engineering old electronics and repurposing them.",
-    icon: Wrench,
+    name: "Musical Instruments",
+    description: " create sounds lol guitar and uke.",
+    icon: Music,
   },
   {
     name: "Indie Gaming",
-    description: "Playing and occasionally developing small 2D platformers.",
+    description: "occasionally developing small 2D platformers.",
     icon: Gamepad2,
   },
   {
-    name: "Photography",
-    description: "Capturing landscapes and macro shots of circuits.",
-    icon: Camera,
-  },
-  {
-    name: "Open Source",
-    description: "Contributing to ROS packages and various Linux tools.",
-    icon: Code,
-  },
-  {
-    name: "Sci-Fi Books",
-    description: "Avid reader of hard sci-fi and cyberpunk literature.",
+    name: "Books",
+    description: "scifi genres and philosophy",
     icon: BookOpen,
   },
 ];
@@ -51,11 +41,11 @@ export default function HobbiesSection() {
             <span className="text-accent mr-3">03.</span> Beyond Coding
           </h2>
           <p className="text-muted max-w-2xl mx-auto mt-4">
-            When I'm not staring at a terminal or debugging C++ pointers, you can find me exploring these other passions.
+            here are some other things i like to do
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
           {hobbies.map((hobby, index) => (
             <motion.div
               key={index}
