@@ -86,7 +86,7 @@ export default function HeroSection() {
             { icon: Mail, href: "mailto:subhamdey228540@gmail.com" },
             { icon: Discord, href: "https://discordapp.com/users/1142797663234953296" },
             { icon: Instagram, href: "https://www.instagram.com/cyan_ide7/" },
-            { icon: FileText, href: "/resume.pdf" },
+            { icon: FileText, href: "/read.me/Subham_Dey_Resume.pdf" },
           ].map((item, index) => (
             <Link
               key={index}
