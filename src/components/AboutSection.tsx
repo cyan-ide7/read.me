@@ -68,7 +68,7 @@ export default function AboutSection() {
             </p>
 
 
-            <h3 className="text-xl font-semibold text-foreground mb-4">buzzwords for myself  </h3>
+            <h3 className="text-xl font-semibold text-foreground mb-4">cool things   </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {skills.map((skill, index) => (
                 <div key={index} className="bg-surface p-4 rounded-lg border border-surface-hover hover:border-accent/50 transition-colors">
