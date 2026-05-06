@@ -65,7 +65,12 @@ export async function getPostData(slug: string): Promise<BlogPostData> {
     .use(remarkGfm)
     .use(html, { sanitize: false })
     .process(matterResult.content);
-  const contentHtml = processedContent.toString();
+
+  // Prefix image src paths with basePath so they resolve under GitHub Pages (/read.me)
+  const basePath = process.env.NODE_ENV === 'production' ? '/read.me' : '';
+  const contentHtml = processedContent
+    .toString()
+    .replace(/(<img[^>]+src=")(\/)([^"]*")/g, `$1${basePath}/$3`);
 
   // Combine the data with the slug and contentHtml
   return {
