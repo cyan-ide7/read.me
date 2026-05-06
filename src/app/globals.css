@@ -29,3 +29,40 @@ body {
   background-color: var(--color-accent);
   color: #09090b;
 }
+
+/* Blog prose: table styling */
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  margin: 1.5rem 0;
+}
+
+.prose th {
+  background-color: #27272a; /* zinc-800 */
+  color: #fafafa;
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+  border: 1px solid #3f3f46; /* zinc-700 */
+  text-align: left;
+}
+
+.prose td {
+  padding: 0.5rem 1rem;
+  border: 1px solid #3f3f46;
+  color: #d4d4d8; /* zinc-300 */
+}
+
+.prose tr:nth-child(even) td {
+  background-color: #18181b; /* zinc-900 */
+}
+
+/* Blog prose: image styling */
+.prose img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin: 1.5rem auto;
+  display: block;
+  border: 1px solid #3f3f46;
+}
