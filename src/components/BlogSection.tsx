@@ -14,7 +14,7 @@ export default function BlogSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4 flex items-center">
-            <span className="text-accent mr-3">04.</span> Thoughts
+            <span className="text-accent mr-3">04.</span> Posts
             <div className="ml-6 h-px bg-surface-hover flex-grow max-w-xs"></div>
           </h2>
         </div>
