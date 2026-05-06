@@ -26,13 +26,7 @@ const projects: Project[] = [
     github: "",
     demo: "https://youtu.be/RT7ClBp0tSs?si=uSeqIIAvbpHPvBJB",
   },
-  {
-    title: "Inverted Pendulum Control System",
-    description: "Designed and simulated an inverted pendulum system using PID control algorithms to achieve stability and analyze system response under varying parameters.",
-    tech: ["Python", "Control Systems", "PID", "Simulation"],
-    github: "",
-    demo: "",
-  },
+
   {
     title: "3D Reconstruction with Gaussian Splatting",
     description: "Generated 3D meshes of real-world objects using Gaussian Splatting techniques, enabling efficient scene reconstruction and visualization.",
@@ -56,9 +50,9 @@ const projects: Project[] = [
   },
 
   {
-    title: "Control Algorithms Simulation Suite",
-    description: "Developed and implemented control system algorithms for dynamic system modeling, simulation, and analysis, including feedback control, PID tuning, and system response visualization.",
-    tech: ["Python", "Control Systems", "Algorithms", "Simulation"],
+    title: "Inverted Pendulum Sim",
+    description: "Control system algorithms for dynamic system modeling, simulation, and analysis, including feedback control, PID tuning, and system response visualization.",
+    tech: ["javascript", "Control Systems", "PID", "threejs"],
     github: "https://github.com/cyan-ide7/control_algorithms",
     demo: "https://cyan-ide7.github.io/control_algorithms/",
   },
