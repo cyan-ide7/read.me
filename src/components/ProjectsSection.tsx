@@ -30,7 +30,7 @@ const projects: Project[] = [
   {
     title: "3D Reconstruction with Gaussian Splatting",
     description: "Generated 3D meshes of real-world objects using Gaussian Splatting techniques, enabling efficient scene reconstruction and visualization.",
-    tech: ["Python", "Computer Vision", "3D Reconstruction"],
+    tech: ["colmap", "gaussian Splatting  ", "nerf", "superSplat", "python"],
     github: "",
     demo: "https://youtu.be/Xunfdvgz9Kc?si=CYLgU-H1GxIUN-C6",
   },
