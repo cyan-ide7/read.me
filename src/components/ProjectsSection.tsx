@@ -56,6 +56,14 @@ const projects: Project[] = [
   },
 
   {
+    title: "Control Algorithms Simulation Suite",
+    description: "Developed and implemented control system algorithms for dynamic system modeling, simulation, and analysis, including feedback control, PID tuning, and system response visualization.",
+    tech: ["Python", "Control Systems", "Algorithms", "Simulation"],
+    github: "https://github.com/cyan-ide7/control_algorithms",
+    demo: "https://cyan-ide7.github.io/control_algorithms/",
+  },
+
+  {
     title: "VLA Robotic Arm (Vision-Language-Action)",
     description: "Developed a robotic manipulation system integrating vision-language-action models to enable task understanding and execution using multimodal inputs.",
     tech: ["Python", "Computer Vision", "LLMs", "PyTorch", "MLP", "Model Architecture"],
