@@ -41,7 +41,7 @@ export default function HobbiesSection() {
             <span className="text-accent mr-3">03.</span> Beyond
           </h2>
           <p className="text-muted max-w-2xl mx-auto mt-4">
-            here are some other things i like to do
+            here are some other things I like to do
           </p>
         </motion.div>
 
