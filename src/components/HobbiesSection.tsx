@@ -11,7 +11,7 @@ const hobbies = [
   },
   {
     name: "Musical Instruments",
-    description: " create sounds lol guitar and uke.",
+    description: " create sounds  guitar and uke.",
     icon: Music,
   },
   {
@@ -21,7 +21,7 @@ const hobbies = [
   },
   {
     name: "Books",
-    description: "Sci-Fi genre. - Isaac Asimov, Liu Cixin",
+    description: "Sci-Fi genre. Isaac Asimov, Liu Cixin",
     icon: BookOpen,
   },
 ];
