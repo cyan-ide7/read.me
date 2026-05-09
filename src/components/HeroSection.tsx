@@ -48,7 +48,7 @@ export default function HeroSection() {
           transition={{ duration: 0.5, delay: 0.3 }}
         >
           <p className="text-lg sm:text-xl text-muted max-w-2xl mb-10 leading-relaxed">
-            I'm passionate about robotics, automation & systems. I am currently working on multimodal vla models and on system Architecture design & will be updating the progress here
+            I'm passionate about robotics, automation & systems. I am currently learning and working on multimodal vla models and on system Architecture design & will be updating the progress here
           </p>
         </motion.div>
 
@@ -94,25 +94,25 @@ export default function HeroSection() {
 
           ].map((item, index) => (
             <a
-                key={index}
-                href={item.href}
-                onClick={(e) => {
-                  if (item.download) {
-                    e.preventDefault();
-                    const link = document.createElement("a");
-                    link.href = item.href;
-                    link.download = "Subham_Dey_Resume.pdf";
-                    document.body.appendChild(link);
-                    link.click();
-                    document.body.removeChild(link);
-                  }
-                }}
-                target={item.download ? undefined : "_blank"}
-                rel="noopener noreferrer"
-                className="text-muted hover:text-accent transition-colors hover:-translate-y-1 transform duration-200"
-              >
-                <item.icon className="w-6 h-6" />
-              </a>
+              key={index}
+              href={item.href}
+              onClick={(e) => {
+                if (item.download) {
+                  e.preventDefault();
+                  const link = document.createElement("a");
+                  link.href = item.href;
+                  link.download = "Subham_Dey_Resume.pdf";
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }
+              }}
+              target={item.download ? undefined : "_blank"}
+              rel="noopener noreferrer"
+              className="text-muted hover:text-accent transition-colors hover:-translate-y-1 transform duration-200"
+            >
+              <item.icon className="w-6 h-6" />
+            </a>
           ))}
         </motion.div>
 
