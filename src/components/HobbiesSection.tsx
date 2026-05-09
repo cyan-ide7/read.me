@@ -21,7 +21,7 @@ const hobbies = [
   },
   {
     name: "Books",
-    description: "scifi genres and philosophy",
+    description: "love the Sci-Fi genre, - issac asimov, Liu Cixin",
     icon: BookOpen,
   },
 ];
