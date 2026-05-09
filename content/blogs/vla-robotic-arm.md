@@ -147,10 +147,7 @@ The image below shows a representative frame from the top-down camera with YOLOv
 
 ![YOLO Object Detection](/yolo-detection.png)
 
-Key observations:
-- Detection runs in real time at ~30 FPS on the simulation feed.
-- Colour disambiguation (e.g. red vs. blue cube) is handled entirely offline via HSV masking.
-- Bounding box centres are stable enough for the pinhole projection to yield sub-centimetre world-position accuracy.
+
 
 ### 4.3 GitHub Repository
 **GitHub Link:** [https://github.com/cyan-ide7/vla_arm.git](https://github.com/cyan-ide7/vla_arm.git)
