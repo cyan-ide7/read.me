@@ -21,7 +21,7 @@ const projects: Project[] = [
 
   {
     title: "Quadruped Robot Simulation",
-    description: "Simulated quadruped robots (Spot, ANYmal) with gait analysis and locomotion control, including ROS1 to ROS2 migration and compatibility fixes for robotics packages.",
+    description: "Simulated quadruped robots (Spot) with gait patterns.",
     tech: ["ROS", "ROS2", "Gazebo", "C++", "Python"],
     github: "",
     demo: "https://youtu.be/RT7ClBp0tSs?si=uSeqIIAvbpHPvBJB",
