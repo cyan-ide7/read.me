@@ -18,6 +18,21 @@ type Project = {
 
 const projects: Project[] = [
 
+  {
+    title: "VLA Robotic Arm (Vision-Language-Action)",
+    description: "Developed a robotic manipulation system integrating vision-language-action models to enable task understanding and execution using multimodal inputs.",
+    tech: ["Python", "Computer Vision", "LLMs", "PyTorch", "MLP", "Model Architecture"],
+    github: "https://github.com/cyan-ide7/vla_arm",
+    demo: "https://youtu.be/eMsCmyZP-U8",
+  },
+
+  {
+    title: "Inverted Pendulum Sim",
+    description: "Control system algorithms for dynamic system modeling, simulation, and analysis, including feedback control, PID tuning, and system response visualization.",
+    tech: ["javascript", "Control Systems", "PID", "threejs"],
+    github: "https://github.com/cyan-ide7/control_algorithms",
+    demo: "https://cyan-ide7.github.io/control_algorithms/",
+  },
 
   {
     title: "Quadruped Robot Simulation",
@@ -34,6 +49,7 @@ const projects: Project[] = [
     github: "",
     demo: "https://youtu.be/Xunfdvgz9Kc?si=CYLgU-H1GxIUN-C6",
   },
+
   {
     title: "Digital Twin Space Suite Monitoring",
     description: "A monitoring system and digital twin implementation for tracking space suite telemetry.",
@@ -41,6 +57,7 @@ const projects: Project[] = [
     github: "https://github.com/cyan-ide7/digital_twin_spaceSuite_monitoring",
     demo: "",
   },
+
   {
     title: "TouchDesigner Sensor Art System",
     description: "Built an interactive visual system integrating ESP32 sensors with TouchDesigner to generate real-time fire simulations based on sound and distance inputs.",
@@ -49,21 +66,6 @@ const projects: Project[] = [
     demo: "",
   },
 
-  {
-    title: "Inverted Pendulum Sim",
-    description: "Control system algorithms for dynamic system modeling, simulation, and analysis, including feedback control, PID tuning, and system response visualization.",
-    tech: ["javascript", "Control Systems", "PID", "threejs"],
-    github: "https://github.com/cyan-ide7/control_algorithms",
-    demo: "https://cyan-ide7.github.io/control_algorithms/",
-  },
-
-  {
-    title: "VLA Robotic Arm (Vision-Language-Action)",
-    description: "Developed a robotic manipulation system integrating vision-language-action models to enable task understanding and execution using multimodal inputs.",
-    tech: ["Python", "Computer Vision", "LLMs", "PyTorch", "MLP", "Model Architecture"],
-    github: "https://github.com/cyan-ide7/vla_arm",
-    demo: "https://youtu.be/eMsCmyZP-U8",
-  },
   {
     title: "ROS2 CoppeliaSim Interface",
     description: "Created an interface layer to integrate ROS2 with CoppeliaSim, enabling real-time communication, control, and simulation synchronization.",
