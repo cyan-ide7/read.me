@@ -9,7 +9,7 @@ const navLinks = [
   { name: "About", href: "#about" },
   { name: "Projects", href: "#projects" },
   { name: "Hobbies", href: "#hobbies" },
-  { name: "Blog", href: "#blog" },
+  { name: "Posts", href: "#posts" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -27,11 +27,10 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 transition-all duration-300 border-b ${
-        isScrolled
-          ? "bg-background/80 backdrop-blur-md border-surface-hover shadow-lg"
-          : "bg-transparent border-transparent"
-      }`}
+      className={`fixed top-0 w-full z-50 transition-all duration-300 border-b ${isScrolled
+        ? "bg-background/80 backdrop-blur-md border-surface-hover shadow-lg"
+        : "bg-transparent border-transparent"
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">

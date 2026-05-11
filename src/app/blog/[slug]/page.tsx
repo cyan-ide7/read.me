@@ -23,7 +23,7 @@ export default async function BlogPost(props: { params: Promise<{ slug: string }
         <Navbar />
         <article className="pt-32 pb-24 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link 
-            href="/#blog" 
+            href="/#posts" 
             className="inline-flex items-center text-muted hover:text-accent transition-colors mb-8 text-sm font-mono"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
