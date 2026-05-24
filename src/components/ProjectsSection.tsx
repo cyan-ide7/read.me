@@ -31,7 +31,7 @@ const projects: Project[] = [
     description: "Control system algorithms for dynamic system modeling, simulation, and analysis, including feedback control, PID tuning, and system response visualization.",
     tech: ["javascript", "Control Systems", "PID", "threejs"],
     github: "https://github.com/cyan-ide7/control_algorithms",
-    demo: "https://cyan-ide7.github.io/control_algorithms/",
+    demo: "https://www.youtube.com/watch?v=bdfsF4BGl44&list=PLLppfgRDKGwIE5ULX0aQIiCxNyj5cWP5L&index=1",
   },
 
   {
