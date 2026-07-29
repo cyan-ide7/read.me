@@ -5,6 +5,8 @@ import { ArrowRight, FileText, Mail } from "lucide-react";
 import { FaGithub as Github, FaLinkedin as Linkedin, FaDiscord as Discord, FaInstagram as Instagram } from "react-icons/fa";
 import Link from "next/link";
 
+const basePath = process.env.NODE_ENV === "production" ? "/read.me" : "";
+
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
@@ -88,7 +90,7 @@ export default function HeroSection() {
             { icon: Instagram, href: "https://www.instagram.com/cyan_ide7/" },
             {
               icon: FileText,
-              href: "subham_resume.pdf",
+              href: `${basePath}/subham_resume.pdf`,
               download: true
             },
 
