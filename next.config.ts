@@ -1,20 +1,19 @@
 import type { NextConfig } from "next";
 
-const isProd = process.env.NODE_ENV === "production";
+// In GitHub Actions, GITHUB_REPOSITORY is "owner/repo-name"
 const repoName = process.env.GITHUB_REPOSITORY
   ? `/${process.env.GITHUB_REPOSITORY.split("/")[1]}`
-  : "";
-const basePath = isProd ? (repoName || "") : "";
+  : "/read.me";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: basePath || undefined,
-  assetPrefix: basePath || undefined,
+  basePath: repoName,
+  assetPrefix: repoName,
   images: {
     unoptimized: true,
   },
   env: {
-    NEXT_PUBLIC_BASE_PATH: basePath,
+    NEXT_PUBLIC_BASE_PATH: repoName,
   },
 };
 
