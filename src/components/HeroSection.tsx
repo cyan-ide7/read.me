@@ -5,7 +5,7 @@ import { ArrowRight, FileText, Mail, Sparkles, MapPin } from "lucide-react";
 import { FaGithub as Github, FaLinkedin as Linkedin, FaDiscord as Discord, FaInstagram as Instagram } from "react-icons/fa";
 import Link from "next/link";
 
-const basePath = process.env.NODE_ENV === "production" ? "/cyan-ide7" : "";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const stats = [
   { value: "50+", label: "REST Endpoints Integrated" },

@@ -6,7 +6,7 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaLinkedin as Linkedin, FaGithub as Github } from "react-icons/fa";
 
-const basePath = process.env.NODE_ENV === "production" ? "/cyan-ide7" : "";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const navLinks = [
   { name: "About", href: "#about" },
