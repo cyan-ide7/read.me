@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
-  title: "About",
-  description: "Personal portfolio showcasing robotics, embedded systems, and software engineering projects.",
+  title: "Subham Dey | Software Engineer & Robotics",
+  description:
+    "Portfolio of Subham Dey — Software Engineering Intern at Lam Research, B.Tech CSE at PES University. Specializing in Systems, Software Automation, Control Simulations, and Multimodal VLA Robotics.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
@@ -19,8 +17,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
-      <body className={`${inter.className} min-h-screen flex flex-col bg-background text-foreground antialiased`}>
+    <html lang="en" className="dark scroll-smooth">
+      <body className="min-h-screen flex flex-col bg-background text-foreground antialiased font-sans selection:bg-accent selection:text-background">
         {children}
       </body>
     </html>
