@@ -13,7 +13,7 @@
 ```bash
 $ whoami
 Subham Dey
-Software Engineering Intern @ Lam Research | B.Tech CSE @ PES University ('27)
+
 
 $ cat current_focus.txt
 - Microservice & REST integrations (Lam Research)
